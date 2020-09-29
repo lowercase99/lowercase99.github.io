@@ -1,0 +1,115 @@
+
+
+    body {
+         background-image:linear-gradient(135deg, lightblue, rgb(58, 58, 173));
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         margin: 4;
+         padding: 4;
+         box-sizing: border-box;
+        }
+         h1 {
+             color:rgb(0, 0, 0); background-image:linear-gradient( rgb(255, 255, 255), #94949485);
+             text-align: center;
+         }
+
+         h2 {color:rgb(0, 0, 0); background-image: radial-gradient( rgb(255, 255, 255), rgb(165, 165, 168));
+         }
+
+     nav {
+            display: grid;
+            flex-direction: row;
+            border-style: solid;
+            border-color: navy;
+            border-width: 5px;
+            margin: 10px;
+            padding: 10px;
+            
+
+
+
+            background-color: rgb(101, 113, 170);
+            color:rgb(249, 250, 246); 
+            background-image: url("https://stillmed.olympic.org/media/Images/OlympicOrg/News/2018/02/15/2018-02-15-snowboard-cross-thumbnail.jpg");
+            
+            background-blend-mode: luminosity;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1em;
+            text-decoration: none;
+            text-align: left;
+             
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+          }
+Nav a{
+            color:rgb(241, 241, 235); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+            'Lucida Sans', Arial, bold; 
+            background-image:linear-gradient(135deg, rgb(163, 17, 163), rgba(248, 248, 252, 0.212));
+          } 
+
+nav a:hover{
+    background-color: lawngreen;
+    letter-spacing: 5px;
+    rotate: 3deg;
+
+} 
+
+
+
+header {color:rgb(252, 249, 249);
+        background-color:rgb(2, 2, 2); }   
+    
+    
+          
+#Menu {color:rgb(0, 0, 0); background-size:100% 100%; text-align: left; background-attachment: fixed; background-image: linear-gradient(white, blue  );}      
+
+img:hover{rotate: 7deg;}
+
+body 
+    
+a {
+    color: indigo;
+}
+a:hover{
+    color: red;
+}
+        
+nav a{
+    color:white;
+}     
+nav a:hover{color: black;
+}   
+ 
+@media screen and (min-width: 500px){
+
+    nav {
+    
+    background-color: pink;
+    
+    } }
+    
+    @media screen and (min-width: 600px){
+    
+    nav {background-color: blue;
+    
+    } }
+
+    @media screen and (min-width: 750px){
+
+        nav {background-color: rgb(90, 199, 90);
+        
+        } }
+
+        @media screen and (min-width: 1000px){
+        
+        nav {background-color: rgb(209, 136, 40);
+        
+        }}
+      
+        @media (min-width:600px) {
+            P {color: blue; font-size: 2em;}
+        }
+        @media (orientation:landscape) and (min-width:400px){
+            h2 {color:red;}
+        }   
+        
