@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!--Metadata character set = Unicode Transformation Format-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>buddy chef</title>
+   
+    
+</head>
+<body>
+    <style>
+        * {
+        margin: 0.0ch;
+        padding: 0.0ch;
+        box-sizing: border-box;
+    }
+    nav {
+        margin-top: 0px;
+        position:fixed;
+    
+        top: 0px;
+        right: 0px;
+        left: 6px;
+        width: 1319px;
+        height: 50px;
+    }
+    nav ul {
+        list-style: none;
+        position:relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+    
+    }
+    nav ul a {
+    
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 30px;
+        padding: 0px 150px 0px 0px;/* padding: 4 sides.  padding: 1px 1px=top/bottom right/left. padding: 1px 1px 1px 1px
+                                                                                         top,right,bottom/left*/
+                                                                                         margin: 2px 2px 0px 60px;
+        color: rgb(255, 255, 255);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    nav ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li.current-menu-item {
+        background: burlywood;
+    }
+    nav ul li:hover {
+        color:  rgb(80, 218, 218);
+    }
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 7%;
+        right: 10%;
+        background:gray;
+        padding: 0px 90px 0px 0px;
+        z-index: 1;
+    }
+    nav ul ul li {
+        float: none;
+        width: 200px;
+        z-index: 1;
+        
+    }
+    nav ul ul a {
+        line-height: 4.5ex;
+        padding: 0px 0px 0px 0px;
+        z-index: 1;
+    }
+    nav ul li ul :hover{
+        color:rgb(80, 218, 218);
+    }
+
+
+    nav ul li:hover > ul {
+        display: block;
+        
+    }
+    nav {
+        
+        margin: 0.8ch;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(80, 218, 218);
+    
+        z-index: 999;
+        }
+    nav div a {
+        color: rgb(255, 255, 255);
+        
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 170%;
+        
+        
+        text-decoration: none;
+        text-decoration: wavy;
+        text-align: center;
+    }
+    header {
+        margin-left: 100px;
+        margin-right: 0in;
+        
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(14, 13, 11);
+        width: 1300px;
+        height: 120px;
+        text-align: left;
+        padding-top: 1.1in;
+        font-size: 130%;
+        padding-left: 36px ;
+        padding-top: 160px;
+        
+        background-size: 1317px;
+      
+      }
+     
+      header img {
+        position: absolute;
+        top: 70px;
+        right: 160px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+    }
+    header a{
+        margin-right: 100px;
+    }
+  
+    
+    .insta{
+        position: absolute;
+        top: 500px;
+        right: 620px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #insta{
+        width: 40px;
+        height: 30px;  
+    }
+    .follow{
+        position: absolute;
+        top: 580px;
+        right: 850px;
+        z-index: 1;}
+    #follow{
+        width: 350px;
+        height: 90px;  
+    }
+    .special{
+        position: absolute;
+        top: 520px;
+        right: 5px;
+        z-index: 1;
+        padding-right: 700px; 
+        font-size: 50px;
+    }
+    #special{
+        width: 500px;
+        height: 90px; 
+        
+    }
+
+    main {
+        display:flex;
+      
+        flex-direction: row;
+       
+    }
+    .picture{
+        position: absolute;
+        top: 250px;
+        right: 527px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #picture{
+        width: 300px;
+        height: 220px;  
+    }
+    .stext{
+    font-size: 20px;
+        position: absolute;
+        top: 246px;
+        right: 700px;
+        width: 500px;
+        height: 50px;
+        z-index: 1;}
+        
+
+    .directions{
+        font-size: 20px;
+        position: absolute;
+        top: 450px;
+        right: 353px;
+        width: 350px;
+        height: 50px;
+        z-index: 1;} 
+
+   
+    .carrot{
+        position: absolute;
+        top: 220px;
+        right: 270px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+        
+        
+    #carrot{
+        width: 80px;
+        height: 80px;
+        
+    }  
+    .potato{
+        position: absolute;
+        top: 220px;
+        right: 180px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #potato{
+        width: 80px;
+        height: 80px;
+    }  
+    .tomato{
+        position: absolute;
+        top: 350px;
+        right: 270px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #tomato{
+        width: 80px;
+        height: 80px;
+    }  
+    .lettuce{
+       
+        position: absolute;
+        top: 350px;
+        right: 180px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #lettuce{
+      
+        width: 80px;
+        height: 80px;
+    }  
+    .chefhead{
+        position: absolute;
+        top: 200px;
+        right: 1197px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #chefhead{
+        width: 80px;
+        height: 70px; }
+        #forms {
+    background-color: rgb(109, 109, 109);
+    margin-left: 0;
+    padding-left: 0px;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        font-size: 24px;
+    
+    }
+    #subs{
+        color: rgb(168, 235, 113);
+        text-align: center;
+        padding-bottom: 20px;
+    padding-right: 40px;
+}
+label {
+    color: aquamarine;
+    margin-left: 110px;
+}
+
+footer {
+    padding-right: 50px;
+    color: grey;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.social{
+        
+        position: absolute;
+        top: 840px;
+        right: 340px;
+        width: 100px;
+        height: 20px;
+        z-index: 1;} 
+    #social{
+        width: 230px;
+        height: 130px;
+    }  
+    a {
+    text-decoration: none;
+    color: white;
+}
+.about{
+    color:white;
+    position: absolute;
+    top: 945px;
+    right: 790px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+    
+    
+
+    .recipes{
+        color:white;
+        position: absolute;
+        top: 945px;
+        right: 670px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;}
+
+    .contact{
+    color:white;
+    position: absolute;
+    top: 945px;
+    right: 570px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+
+    .donations{
+        color:white;
+        position: absolute;
+        top: 945px;
+        right: 470px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;}  
+        
+    .picture2{
+        position: absolute;
+        top: 560px;
+        right: 127px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        padding-right:250px;
+    }
+    #picture2{
+        width: 180px;
+        height: 200px;  
+    }
+    .picture3{
+        position: absolute;
+        top: 560px;
+        right: 127px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        padding-right:450px;
+    }
+    #picture3{
+        width: 180px;
+        height: 200px;  
+    }
+    .picture4{
+        position: absolute;
+        top: 560px;
+        right: 327px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        padding-right:450px;
+    }
+    #picture4{
+        width: 180px;
+        height: 200px;  
+    }
+    .stext2{
+    font-size: 20px;
+        position: absolute;
+        top: 596px;
+        right: 807px;
+        width: 400px;
+        height: 50px;
+        z-index: 1;}
+        
+ 
+ 
+
+    </style>
+        <nav>
+            <ul><!--unordered list-->
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="recipies.html">Recipes</a>
+                    <ul>
+                        <li><a href="diabetes.html">Diabetic</a></li>
+                        <li><a href="lowcholesterol.html">Low Cholesterol</a></li>
+                        <li><a href="planbased.html">Plant Based</a></li>
+                        <li><a href="lowcalories.html">Low Calories</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact us</a>
+                    <ul>
+                        <li><a href="office.html">Office</a></li>
+                        <li><a href="chefs.html">Chefs</a></li>
+                        <li><a href="growers.html">Food Growers</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+        
+        
+                    </ul>
+                </li>
+                
+                <li>
+                  
+                  <a id="Searchbar" href=""><input type="search" type="text" value="Search Recipies"></a></li>
+                
+            </ul>
+        </nav>
+        <header>
+            <h1>About us</h1>
+           
+            
+            <a id="avocado" href="newsItemysite.html" ><img src="https://static.vecteezy.com/system/resources/previews/001/208/695/non_2x/chef-png.png"></a>
+         
+        
+            <div class="special">
+                <h5 id="special">Our Mission</h5>
+            </div>
+     </header>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+<main>
+    <div class="picture">
+    <img id="picture" src="vendor.jpg">
+    </div> 
+    <div class="picture2">
+        <img id="picture2" src="megan.jpg">
+        </div> 
+    <div class="picture3">
+    <img id="picture3" src="map.jpg">
+    </div> 
+    <div class="picture4">
+        <img id="picture4" src="omar.jpeg">
+        </div> 
+              
+      
+  
+    <br>
+   
+    <div class="stext">
+    
+
+        <p>
+            Buddy Chef was founded in Los Angeles by Juan Ruiz in 2020. Buddy Chef is a platform that connects health conscious individuals to local food growers and chefs in their area. At Buddy Chef we aim to provide every household with wholesome recipes, and connections with chefs and local food growers. We provide easy-to-follow recipes and information on where to find local, fresh, high-quality ingredients. We offer a variety of easy-to-follow recipes for every lifestyle and diet, from keto to plant-powered and beyond.</p>
+    </div>
+       
+            <div class="stext2">
+    
+
+                <p>Our mission is to create a Los Angeles based network
+                    that focuses on healthy eating while supporting local
+                    farmers markets in the city of Los Angeles.
+                    </p>
+            </div>
+               
+        
+          
+           
+
+  
+   
+</main>
+<br>
+<br>
+<br>
+<br>
+<form id="forms">
+    <h3 id="subs">Get our latest recipes</h3>
+  
+    <label>Email: </label>   <input type="email"> <input type="Submit" value="SING UP">
+  </form> 
+  <a href="aboutus.html"><div class="about">
+    <h4>About us</h4></a>
+  </div> 
+  <a href="recipies.html"><div class="recipes">
+    <h4>Recipes</h4></a>
+  </div>
+  <a href="contactus.html"><div class="contact">
+    <h4>Contact us</h4></a>
+  </div>
+  <a href="donations.html"><div class="donations">
+    <h4>Donations</h4></a>
+  </div>
+  <div class="social">
+    <img id="social" src="socialmedia.png" alt="social">
+  </div>
+  
+
+
+<footer>
+    <p>Designed by Juan Ruiz 2020</p>
+    <br>
+    <a href="Jruiz64@calstatela.edu">Support Buddy Chef</a>
+  </footer>
+</body>
+<br>
+</html>
