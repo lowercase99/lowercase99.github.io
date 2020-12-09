@@ -1,0 +1,469 @@
+* {
+    margin: 0.0ch;
+    padding: 0.0ch;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 236, 236);}
+
+nav {
+    margin-top: 0px;
+    position:fixed;
+
+    top: 0px;
+    right: 0px;
+    left: 6px;
+    width: 1319px;
+    height: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    position:relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul a {
+
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0px 150px 0px 0px;/* padding: 4 sides.  padding: 1px 1px=top/bottom right/left. padding: 1px 1px 1px 1px
+                                                                                     top,right,bottom/left*/
+                                                                                     margin: 2px 2px 0px 60px;
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+nav ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+nav ul li.current-menu-item {
+    background: burlywood;
+}
+
+nav ul li ul :hover{
+    color:rgb(80, 218, 218);}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 99%;
+    left: 7%;
+    right: 10%;
+    background:gray;
+    padding: 0px 90px 0px 0px;
+    z-index: 1;
+}
+nav ul ul li {
+    float: none;
+    width: 200px;
+    z-index: 1;
+    
+}
+nav ul ul a {
+    line-height: 4.5ex;
+    padding: 0px 0px 0px 0px;
+    z-index: 1;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav {
+    
+    margin: 0.8ch;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(80, 218, 218);
+
+    z-index: 999;
+    }
+
+nav div a {
+    color: rgb(255, 255, 255);
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 170%;
+    
+    
+    text-decoration: none;
+    text-decoration: wavy;
+    text-align: center;
+}
+ 
+.logo{
+    position: absolute;
+    top: 120px;
+    right: 670px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+#logo{
+    width: 160px;
+    height: 160px;
+}
+.title{
+    position: absolute;
+    top: 280px;
+    right: 640px;
+    width: 200px;
+    height: 20px;
+    z-index: 1;}
+    
+#title{
+    width: 600px;
+    height: 10px;
+    font-size: 60px;
+}  
+
+  
+#background{
+    width: 1300px;
+    height: 300px;
+  
+}
+
+main {
+    display:flex;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    background-color:  rgb(41, 155, 155);
+    background-image: linear-gradient(  rgb(80, 218, 218), white);
+    
+}
+
+#healthy {
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+    
+}
+
+#quinoa {
+    margin-top: 0in;
+    padding-top: 3 in;
+    text-align: left;
+ 
+    background-size: 400px;
+
+    
+    width: 400px;
+    height: 50px;
+    
+}
+#quinoa:hover {
+    opacity: 0.5;
+}
+
+#vegetarian {
+
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+    
+    
+}
+#vegantacos {
+    
+    margin-top: 0px;
+    padding-top: 3 in;
+    text-align: left;
+ 
+    background-size: 400px;
+    
+    width: 400px;
+    height: 50px;
+}
+#vegantacos:hover {
+    opacity: 0.5;
+}
+#recipies {
+
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+    
+}
+#pumking {
+    margin-top: 0 in;
+    padding-top: 3 in;
+    text-align: left;
+  
+    background-size: 400px;
+    
+    width: 400px;
+    height: 50px;
+}
+#pumking:hover {
+    opacity: 0.5;
+}
+#Salad {
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+}
+#fruitsalad {
+   
+    list-style: none;
+    margin-top: 0px;
+    padding-top: 2.5in;
+    text-align: center;
+    font-size: 20px;
+    background-image: url(https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/6/19/1/YW0303H_hawaiian-fresh-fruit-salad-recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1375577792345.jpeg);
+    background-size: 336px;
+    background-position: center;
+    
+    width: 200px;
+    height: 100px;
+}
+#fruitsalad:hover {
+    opacity: 0.5;
+    
+}
+
+#vegan {
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+}
+#pumkin {
+    margin-top: 0px;
+    padding-top: 2.5in;
+    text-align: center;
+    font-size: 20px;
+    background-image: url(https://images.101cookbooks.com/toasted-pumpkin-seeds-1.jpg?w=620&auto=format);
+    background-size: 360px;
+    background-position: center;
+    
+    width: 200px;
+    height: 100px;
+}
+#pumkin:hover {
+    opacity: 0.5;
+}
+#light {
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+}
+#japanesse {
+    margin-top: 0px;
+    padding-top: 2.5in;
+    text-align: center;
+    font-size: 20px;
+    background-image: url(https://media2.s-nbcnews.com/i/newscms/2017_31/1268803/japanese-cucumber-salad-today-tease-170731_8efb8bef8838afc7341ea451568f95f3.jpg);
+    background-size: 430px;
+    background-position: center;
+    
+    width: 200px;
+    height: 100px;
+}
+#japanesse:hover {
+    opacity: 0.5;
+}
+#snacks {
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+}
+#papaya {
+    margin-top: 0px;
+    padding-top: 2.5in;
+    text-align: center;
+    font-size: 20px;
+    background-image: url(https://cookingwithlane.com/wp-content/uploads/2019/12/thai-vs-lao-papaya-salad-001-720x540.jpg);
+    background-size: 320px;
+    background-position: center;
+
+    width: 200px;
+    height: 100px;
+}
+#papaya:hover {
+    opacity: 0.5;
+}
+#breakfast {
+    position: absolute;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom:  10px;
+    background-color: rgb(137, 187, 38);
+    color: white;
+    font-size: 0.8em;
+    display: inline;
+}
+#banana {
+    margin-top: 0px;
+    padding-top: 2.5in;
+    text-align: center;
+    font-size: 20px;
+    background-image: url(https://www.kitchentreaty.com/wp-content/uploads/2013/04/IMG_6358.jpg);
+    background-size: 336px;
+   
+    background-position: center;  
+    width: 200px;
+    height: 200px;
+ 
+}
+#banana:hover {
+opacity: 0.5;
+}
+
+
+div ul li {
+padding-top: 6px;
+  
+    list-style: none;
+    font-size: 13px;
+}
+.top {
+    margin-left: 38%;
+}
+
+
+img:hover {
+    opacity: 0.5;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    padding:30px;
+}
+
+#forms {
+    background-color: rgb(109, 109, 109);
+    margin-left: 0;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-size: 24px;
+   
+}
+#subs{
+    color: rgb(168, 235, 113);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+footer {
+    padding-right: 50px;
+    color: grey;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+label {
+    color: aquamarine;
+    margin-left: 110px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.about{
+    color:white;
+    position: absolute;
+    top: 1440px;
+    right: 770px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+    
+    
+
+    .recipes{
+        color:white;
+        position: absolute;
+        top: 1440px;
+        right: 670px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;}
+
+    .contact{
+    color:white;
+    position: absolute;
+    top: 1440px;
+    right: 570px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+
+    .donations{
+        color:white;
+        position: absolute;
+        top: 1440px;
+        right: 470px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;} 
+    
+   
+        .social{
+        
+            position: absolute;
+            top: 1340px;
+            right: 340px;
+            width: 100px;
+            height: 20px;
+            z-index: 1;} 
+        #social{
+            width: 230px;
+            height: 130px;
+        }         
