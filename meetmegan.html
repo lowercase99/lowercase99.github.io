@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!--Metadata character set = Unicode Transformation Format-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>buddy chef</title>
+   
+    
+</head>
+<body>
+    <style>
+        * {
+        margin: 0.0ch;
+        padding: 0.0ch;
+        box-sizing: border-box;
+    }
+    nav {
+        margin-top: 0px;
+        position:fixed;
+    
+        top: 0px;
+        right: 0px;
+        left: 6px;
+        width: 1319px;
+        height: 50px;
+    }
+    nav ul {
+        list-style: none;
+        position:relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+    
+    }
+    nav ul a {
+    
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 30px;
+        padding: 0px 150px 0px 0px;/* padding: 4 sides.  padding: 1px 1px=top/bottom right/left. padding: 1px 1px 1px 1px
+                                                                                         top,right,bottom/left*/
+                                                                                         margin: 2px 2px 0px 60px;
+        color: rgb(255, 255, 255);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    nav ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li.current-menu-item {
+        background: burlywood;
+    }
+    nav ul li:hover {
+        color:  rgb(80, 218, 218);
+    }
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 7%;
+        right: 10%;
+        background:gray;
+        padding: 0px 90px 0px 0px;
+        z-index: 1;
+    }
+    nav ul ul li {
+        float: none;
+        width: 200px;
+        z-index: 1;
+        
+    }
+    nav ul ul a {
+        line-height: 4.5ex;
+        padding: 0px 0px 0px 0px;
+        z-index: 1;
+    }
+    nav ul li ul :hover{
+        color:rgb(80, 218, 218);
+    }
+
+
+    nav ul li:hover > ul {
+        display: block;
+        
+    }
+    nav {
+        
+        margin: 0.8ch;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(80, 218, 218);
+    
+        z-index: 999;
+        }
+    nav div a {
+        color: rgb(255, 255, 255);
+        
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 170%;
+        
+        
+        text-decoration: none;
+        text-decoration: wavy;
+        text-align: center;
+    }
+    header {
+        margin-left: 100px;
+        margin-right: 0in;
+        
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(14, 13, 11);
+        width: 1300px;
+        height: 120px;
+        text-align: left;
+        padding-top: 1.1in;
+        font-size: 130%;
+        
+        background-size: 1317px;
+      
+      }
+     
+      header img {
+        position: absolute;
+        top: 70px;
+        right: 160px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+    }
+    .face{
+        position: absolute;
+        top: 480px;
+        right: 640px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+    }
+    #face{
+        width: 30px;
+        height: 30px;
+    }
+    .insta{
+        position: absolute;
+        top: 480px;
+        right: 600px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #insta{
+        width: 30px;
+        height: 30px;  
+    }
+    .follow{
+        position: absolute;
+        top: 563px;
+        right: 850px;
+        z-index: 1;}
+    #follow{
+        width: 300px;
+        height: 90px;  
+    }
+    .special{
+        position: absolute;
+        top: 195px;
+        right: -30px;
+        z-index: 1;}
+    #special{
+        width: 300px;
+        height: 90px;  
+    }
+
+    main {
+        display:flex;
+      
+        flex-direction: row;
+       
+    }
+    main img {
+        
+        margin-left: 100px;
+    }
+    main p {
+        margin-left: 40px;
+    }
+    #stext {
+        display: grid;
+        padding-right: 25%;
+        
+    }
+    #stext img {
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    #stext h4 {
+        margin-top: -64px;
+        margin-left: 85px;
+        z-index: 20;
+    }
+    .carrot{
+        position: absolute;
+        top: 220px;
+        right: 270px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #carrot{
+        width: 80px;
+        height: 80px;
+    }  
+    .potato{
+        position: absolute;
+        top: 220px;
+        right: 180px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #potato{
+        width: 80px;
+        height: 80px;
+    }  
+    .tomato{
+        position: absolute;
+        top: 350px;
+        right: 270px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #tomato{
+        width: 80px;
+        height: 80px;
+    }  
+    .lettuce{
+       
+        position: absolute;
+        top: 350px;
+        right: 180px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;}
+    #lettuce{
+      
+        width: 80px;
+        height: 80px;
+    }  
+    #forms {
+    background-color: rgb(109, 109, 109);
+    margin-left: 0;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-size: 24px;
+   
+}
+#subs{
+    color: rgb(168, 235, 113);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+label {
+    color: aquamarine;
+    margin-left: 110px;
+}
+
+footer {
+    padding-right: 50px;
+    color: grey;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.social{
+        
+        position: absolute;
+        top: 630px;
+        right: 340px;
+        width: 100px;
+        height: 20px;
+        z-index: 1;} 
+    #social{
+        width: 230px;
+        height: 130px;
+    }  
+    a {
+    text-decoration: none;
+    color: white;
+}
+.about{
+    color:white;
+    position: absolute;
+    top: 740px;
+    right: 790px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+    
+    
+
+    .recipes{
+        color:white;
+        position: absolute;
+        top: 740px;
+        right: 670px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;}
+
+    .contact{
+    color:white;
+    position: absolute;
+    top: 740px;
+    right: 570px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;}
+
+    .donations{
+        color:white;
+        position: absolute;
+        top: 740px;
+        right: 470px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;}        
+ 
+
+    </style>
+        <nav>
+            <ul><!--unordered list-->
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="recipies.html">Recipes</a>
+                    <ul>
+                        <li><a href="diabetes.html">Diabetic</a></li>
+                        <li><a href="lowcholesterol.html">Low Cholesterol</a></li>
+                        <li><a href="planbased.html">Plant Based</a></li>
+                        <li><a href="lowcalories.html">Low Calories</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact us</a>
+                    <ul>
+                        <li><a href="office.html">Office</a></li>
+                        <li><a href="chefs.html">Chefs</a></li>
+                        <li><a href="growers.html">Food Growers</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+        
+                    </ul>
+                </li>
+                
+                <li>
+                  
+                  <a id="Searchbar" href=""><input type="search" type="text" value="Search Recipies"></a></li>
+                
+            </ul>
+        </nav>
+        <header>
+            <h1>Megan Lee</h1>
+            <a href="newsItemysite.html" ><img src="https://static.vecteezy.com/system/resources/previews/001/208/695/non_2x/chef-png.png"></a>
+            <div class="face">
+                <img id="face"src="https://olbi.uottawa.ca/sites/olbi.uottawa.ca/files/facebook-logo-png-transparent-background.png" alt="facebook">
+            </div>
+            <div class="insta">
+                <img id="insta"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram">
+            </div>
+            <div class="follow">
+                <h5 id="follow"> Follow Megan on social media</h5>
+            </div>
+            <div class="special">
+                <h5 id="special"> Megan's recipes</h5>
+            </div>
+     </header>
+     <br>
+     <br>
+     <br>
+<main>
+    <div>
+    <img src="megan.jpg" height="364px" width="520px"></a>
+    </div> 
+    <br>
+    <div id="stext">
+    <p>Avant-garde, Spanish-born chef Andres Olver grew up in the heart of the Basque culinary landscape. After his academic and culinary studies, he joined the team at Ferran Adrià’s legendary experimental restaurant, El Bulli. In 1998, he brought the spirit of research and development to his own restaurant, Mugaritz, which has held two Michelin stars since 2006. Consistently ranked among the world’s best restaurants, Olver bridges the gap between innovation and tradition, experimenting with local Basque techniques and ingredients. For his work at Mugaritz, Chef Aduriz is regarded as a pioneer of modernist cuisine.</p>
+        <img src="https://www.johncochraneadvertising.com/wp-content/uploads/2016/06/new-google-maps-logo-vector-download.jpg" height="39px" width="45px" alt="logo">
+        <div>
+        <h4>Lartchmonth Village farmers market (Friday and Sunday) 9am - 2pm</h4>
+    </div>
+    <div class="carrot">
+        <a href="mozzarela.html"><img id="carrot"src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/317/317154/mozzarella-and-tomato-sandwich.jpg?w=1155&h=1541" alt="carrots"></a>
+        <p>Mozzarela Sandwich</p> 
+    </div>
+    <div class="potato">
+        <a href="moroccan.html"><img id="potato"src="https://cherryonmysundae.com/wp-content/uploads/2014/03/moroccan-chicken-pita.jpg" alt="potato"></a>
+        <p>Moroccan Chicken</p> 
+    </div>
+    <div class="tomato">
+        <img id="tomato"src="https://www.feastingathome.com/wp-content/uploads/2017/11/Middle-Eastern-Tacos-106.jpg" alt="tomato">
+        <p>Middle Eastern Salad</p> 
+    </div>
+    <div class="lettuce">
+       
+        <img id="lettuce"src="https://irepo.primecp.com/2016/08/294120/EDR-Cauliflower-Tots_Category-CategoryPageDefault_ID-1807400.jpg?v=1807400" alt="lettuce">
+           <p>Cauliflower Tots</p> 
+    </div>
+   
+</main>
+<br>
+<br>
+<br>
+<br>
+<form id="forms">
+    <h3 id="subs">Get our latest recipes</h3>
+  
+    <label>Email: </label>   <input type="email"> <input type="Submit" value="SING UP">
+  </form> 
+  <a href="aboutus.html"><div class="about">
+    <h4>About us</h4></a>
+  </div> 
+  <a href="recipies.html"><div class="recipes">
+    <h4>Recipes</h4></a>
+  </div>
+  <a href="contactus.html"><div class="contact">
+    <h4>Contact us</h4></a>
+  </div>
+  <a href="donations.html"><div class="donations">
+    <h4>Donations</h4></a>
+  </div>
+  <div class="social">
+    <img id="social" src="socialmedia.png" alt="social">
+  </div>
+  
+
+
+<footer>
+    <p>Designed by Juan Ruiz 2020</p>
+    <br>
+    <a href="Jruiz64@calstatela.edu">Support Buddy Chef</a>
+  </footer>
+</body>
+<br>
+</html>
